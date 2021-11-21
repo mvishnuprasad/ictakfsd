@@ -4,19 +4,20 @@
         <title>
             Test
         </title>
-<link rel="stylesheet" href="W:\Learn\Coding\Web\ICTAK\Samples\Rough\style.css"  ></link>
-        <script src="W:\Learn\Coding\Web\ICTAK\Samples\Rough\script.js" type="text/javascript"></script>
-
+        
+<link rel="stylesheet" href="style.css"  ></link>
+       
     </head>
     <body>
-        <h1>This is the Test page</h1>
         
-        <p >here we add the paragraphs<br> with an 
+        <h1 id = "head1">This is the Test page</h1>
+        
+        <p id ="para1">here we add the paragraphs<br> with an 
             line break between them</p>
             <hr>
 
 
-<p id = "btn" onclick="show();" > Click here </p>
+<p id = "btn" ondblclick ="reset();" onclick="show();" > Click here </p>
 
     <blockquote cite = "http://www.a.com">
         Some random text here...
@@ -40,18 +41,26 @@
         <abbr title ="wiuwiuiwujiuji udiuh udhiuh"> WHO </abbr>
     </blockquote>
 <bdo dir = "rtl">this text is a random text</bdo>
-<address>uiweuhiuhiu
-    diuhnid
-    ejdowi 3ui3u 
-</address>
-<pre>
-    Some random text here...
-    and here    we add
-    another line break between
-</pre>
-<hr>
+<div class ="text1">
+
+    <address>uiweuhiuhiu
+        diuhnid
+        ejdowi 3ui3u 
+    </address>
+    <pre>
+        Some random text here...
+        and here    we add
+        another line break between
+        FUHIUFUUFUHFUHFUIUHIFUHFUFIUFUFUHIUHIUHIUHIUFUHIUHFU
+        HIUHFUHFUFUIUHUHUIUHIUHIUHIUHIUHIUHIUH
+    </pre>
+    <hr>
+
+</div> 
 
 
-            <img src = "W:\Learn\Coding\Web\ICTAK\Samples\Rough\img.jpeg" alt = "Text">
-    </body>
+            <img id ="image" onmouseover = "change();" onmouseout="resetimg();" src = "img.jpeg" alt = "Text" height="200px" width ="300px">
+            <script  type="text/javascript" src="script.js"></script>
+
+        </body>
 </html>

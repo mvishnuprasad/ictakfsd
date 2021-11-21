@@ -1,44 +1,35 @@
 
 console.error("Demo error");
 
-let number = 83678;
-
-    document.write("<h1>Hello Js</h1>")
-    document.write("<h1>Another</h1>")
-    document.write("<h1>typeof number</h1>")
-var v = document.querySelectorAll("h1")
-
+var x=document.getElementById("head1");
+x.innerText="javascript heading";
+var y = document.getElementsByClassName("text1");
+y[0].style.color="red";
+var z = document.getElementsByTagName("blockquote");
+z[0].style.color="green";
+var q= document.querySelector("h1")
+q.style.color="green";
     function show(){
-        for (let i=0;i<5;i++){
-            console.log(i);
-        }
-let i = 0;
-        while (i<=5){
-            console.log(i);
-            i++;
-        }
-        do{
-            console.log(i);
-            i++;
-        }
-        while (i<=5);
+      var i = document.getElementById("image");
+      i.setAttribute("hidden","true");
+      
     }
 
-    function print(){
+    function reset(){
+        var i = document.getElementById("image");
+        i.removeAttribute("hidden","true");
         
-        {var a=20;}
-       
-        let b = a++;
-        console.log (a);
-        let c = ++a;
-       
-        console.log (b);
-        console.log (c);
-        console.log(a>b);
+      }
 
-        let f  = 1001;
-    let g =1010;
-    console.log (f&g);
-    }
-    
-    print();
+      function change(){
+        var i = document.getElementById("image");
+        i.removeAttribute("src","img.jpeg");
+        i.setAttribute("src","img1.jpeg");
+      }
+
+      function resetimg(){
+        var i = document.getElementById("image");
+      
+        i.removeAttribute("src","img1.jpeg");
+        i.setAttribute("src","img.jpeg");
+      }
