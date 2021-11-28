@@ -1,35 +1,22 @@
 
-console.error("Demo error");
+      function validate(){
 
-var x=document.getElementById("head1");
-x.innerText="javascript heading";
-var y = document.getElementsByClassName("text1");
-y[0].style.color="red";
-var z = document.getElementsByTagName("blockquote");
-z[0].style.color="green";
-var q= document.querySelector("h1")
-q.style.color="green";
-    function show(){
-      var i = document.getElementById("image");
-      i.setAttribute("hidden","true");
-      
-    }
+    
+   
+      var lblError = document.getElementById("error");
+      lblError.innerHTML = ""
 
-    function reset(){
-        var i = document.getElementById("image");
-        i.removeAttribute("hidden","true");
-        
-      }
+let regexp = /^([\w\.-]+)@([\w\-]+).([a-z]{2,4})(.[a-z]{2,3})?$/;
 
-      function change(){
-        var i = document.getElementById("image");
-        i.removeAttribute("src","img.jpeg");
-        i.setAttribute("src","img1.jpeg");
-      }
+var e = document.getElementById("email");
+if (regexp.test(e.value)){
+  lblError.innerHTML = "correct";
+  return true;
+}
+else{
+  lblError.innerHTML = "invalid";
 
-      function resetimg(){
-        var i = document.getElementById("image");
-      
-        i.removeAttribute("src","img1.jpeg");
-        i.setAttribute("src","img.jpeg");
-      }
+return false;
+}     
+
+}

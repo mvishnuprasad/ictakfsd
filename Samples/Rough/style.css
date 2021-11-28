@@ -1,29 +1,35 @@
-
 h1 {
   background-color: aquamarine;
   text-align: center;
-  
 }
 p {
-    color: red;
-    text-align: center;
-    font-weight: bold;
-  }
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
 
-  #btn{
-    background-color: aqua;
-    color: black;
-    margin: auto;
-    width: 10%;
-    height: 30px;
-    text-align: center;
-    border-radius: 20px;
-   
-  }
-  #btn:hover{
-    background-color:red;
-    color: yellow;
-  }
-  #btn:active{
-    color:bisque;
-  }
+#btn {
+  background-color: aqua;
+  color: black;
+  margin: auto;
+  width: 10%;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+#btn:hover {
+  background-color: red;
+  color: yellow;
+}
+#btn:active {
+  color: bisque;
+}
+#form1 {
+  margin-left: auto;
+  padding-left: 10px;
+  background-color: rgb(240, 240, 185);
+}
+input{
+  margin-left:auto;
+  background-color:rgb(225, 230, 245)
+}

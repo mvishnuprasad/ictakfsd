@@ -1,66 +1,88 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <title>
-            Test
-        </title>
-        
-<link rel="stylesheet" href="style.css"  ></link>
-       
-    </head>
-    <body>
-        
-        <h1 id = "head1">This is the Test page</h1>
-        
-        <p id ="para1">here we add the paragraphs<br> with an 
-            line break between them</p>
-            <hr>
+
+<head>
+    <title>
+        Test
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+    </link>
+
+</head>
+
+<body>
+
+    <h1 id="head1">This is the Test page</h1>
+
+    <p id="para1">here we add the paragraphs<br> with an
+        line break between them</p>
+    <hr>
 
 
-<p id = "btn" ondblclick ="reset();" onclick="show();" > Click here </p>
+    <p id="btn" ondblclick="reset();" onclick="show();"> Click here </p>
 
-    <blockquote cite = "http://www.a.com">
+    <blockquote cite="http://www.a.com">
         Some random text here...
-        and here    we add
+        and here we add
         another line break between
         Some random text here...
-        and here    we add
+        and here we add
         another line break between
         Some random text here...
-        and here    we addrandom text here...
-        and here    we add
+        and here we addrandom text here...
+        and here we add
         another line break between <q>
+            Some random text here...
+            and here we addrandom text here...
+            and here we add
+            another line break between</q>
         Some random text here...
-        and here    we addrandom text here...
-        and here    we add
-        another line break between</q>
-        Some random text here...
-        and here    we add
+        and here we add
         another line break between
-<a href="http://www.google.com/search" target="_blank">Text</a>
-        <abbr title ="wiuwiuiwujiuji udiuh udhiuh"> WHO </abbr>
+        <a href="http://www.google.com/search" target="_blank">Text</a>
+        <abbr title="wiuwiuiwujiuji udiuh udhiuh"> WHO </abbr>
     </blockquote>
-<bdo dir = "rtl">this text is a random text</bdo>
-<div class ="text1">
+    <bdo dir="rtl">this text is a random text</bdo>
+    <div class="text1">
 
-    <address>uiweuhiuhiu
-        diuhnid
-        ejdowi 3ui3u 
-    </address>
-    <pre>
+        <address>uiweuhiuhiu
+            diuhnid
+            ejdowi 3ui3u
+        </address>
+        <pre>
         Some random text here...
         and here    we add
         another line break between
         FUHIUFUUFUHFUHFUIUHIFUHFUFIUFUFUHIUHIUHIUHIUFUHIUHFU
         HIUHFUHFUFUIUHUHUIUHIUHIUHIUHIUHIUHIUH
     </pre>
-    <hr>
+        <hr>
 
-</div> 
+    </div>
 
 
-            <img id ="image" onmouseover = "change();" onmouseout="resetimg();" src = "img.jpeg" alt = "Text" height="200px" width ="300px">
-            <script  type="text/javascript" src="script.js"></script>
+    <img id="image" onmouseover="change();" onmouseout="resetimg();" src="img.jpeg" alt="Text" height="200px"
+        width="300px">
+   
+    <form id="form1" onsubmit="return validate();" action="https://www.google.com" target="_blank">
+        <h3>Form</h3>
+        <label for="name">Name</label>
+        <input type="text" required placeholder="Name" id ="name">
+        <br><br>
+        <label for="email">Email</label>
+        
+        <input type="text" placeholder="Email" id = "email">
+        <label for ="error" id ="error"></label>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id ="pwd">
+        <br><br>
+        <button id="submit" >Submit</button>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
 
-        </body>
+
+</body>
+
 </html>
