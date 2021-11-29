@@ -45,9 +45,36 @@ Student.prototype.class = "X";
 function Alumni(){
     this.Batch = "2011";
 }
+// Assign object of parent class to prototype of the functionb to which the inheritance should pass
 Alumni.prototype= new Student("sss",22);
 var std = new Alumni();
 console.log(std.class , std.Batch)
+
+
+
+
+const Animal = function(sound){
+    this.Sound=sound;
+}
+Animal.prototype.makeSound = function() {
+    console.log(this.Sound);
+}
+var dog = function(name , breed){
+this.name=name;
+this.breed=breed;
+}
+
+dog.prototype = new Animal("bow");
+var cat = function(name, breed){
+    this.name=name;
+    this.breed=breed;
+}
+
+cat.prototype = new Animal("meow");
+var dog1 = new dog("pino","corgi");
+var cat1= new cat("bin","persian");
+dog1.makeSound();
+cat1.makeSound();
     </script>
 </body>
 
