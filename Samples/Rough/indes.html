@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+<body>
+    <h1>Student</h1>
+    <script>
+
+// var student = {
+//     fname:"John",
+//     lname:"Mathew",
+//     place:"",
+//     class: "10",
+//     phy: 22,
+//     che:23,
+//     bio:33,
+// findSUm : function(){
+//     return(this.phy+this.che+this.bio)
+// },
+// findAvg : function(){
+//     return(this.findSUm()/3)
+// },
+// get fullname(){
+// return(`${this.fname} ${this.lname}`)
+// },
+// set location(place){
+// this.place = place;
+// },
+// print : function(){
+//     this.location = "London";
+//     console.log(`the sum is ${this.findSUm()} for ${this.fullname} at ${this.place}`);
+// },
+
+
+// }
+
+
+// student.print();
+function Student(name, rollnum){
+this.Name = name;
+this.Rollnum = rollnum;
+}
+Student.prototype.class = "X";
+function Alumni(){
+    this.Batch = "2011";
+}
+Alumni.prototype= new Student("sss",22);
+var std = new Alumni();
+console.log(std.class , std.Batch)
+    </script>
+</body>
+
+</html>
