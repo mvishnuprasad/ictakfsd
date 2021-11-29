@@ -7,18 +7,35 @@
     <h1>Student</h1>
 
 
-
-
+<input type="text" id = "enter">
+<p id ="num"></p>
     <button id ="press" onclick="onPress();">Click</button>
     <script>
 let press = document.getElementById("press");
+let num = document.getElementById("num");
+let enter = document.getElementById("enter");
+
+
+// function onPress(){
+//     var a = 0;
+//     try{
+//         adalert("Pressed" + a);
+//     }
+//     catch(e){
+//         console.log(e.description);
+//     }
+// }
+
 function onPress(){
-    var a = 0;
+    var a = enter.value;
     try{
-        adalert("Pressed" + a);
+        if (a=="") throw "empty";
+        if(isNaN(a)) throw "not a num";
+        if(a<5) throw "low";
+        if(a>10) throw "high";
     }
     catch(e){
-        console.log(e.description);
+        num.innerHTML = "Error " + e;
     }
 }
 
