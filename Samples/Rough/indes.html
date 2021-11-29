@@ -5,7 +5,22 @@
 </head>
 <body>
     <h1>Student</h1>
+
+
+
+
+    <button id ="press" onclick="onPress();">Click</button>
     <script>
+let press = document.getElementById("press");
+function onPress(){
+    var a = 0;
+    try{
+        adalert("Pressed" + a);
+    }
+    catch(e){
+        console.log(e.description);
+    }
+}
 
 // var student = {
 //     fname:"John",
@@ -37,44 +52,45 @@
 
 
 // student.print();
-function Student(name, rollnum){
-this.Name = name;
-this.Rollnum = rollnum;
-}
-Student.prototype.class = "X";
-function Alumni(){
-    this.Batch = "2011";
-}
+// function Student(name, rollnum){
+// this.Name = name;
+// this.Rollnum = rollnum;
+// }
+// Student.prototype.class = "X";
+// function Alumni(){
+//     this.Batch = "2011";
+// }
 // Assign object of parent class to prototype of the functionb to which the inheritance should pass
-Alumni.prototype= new Student("sss",22);
-var std = new Alumni();
-console.log(std.class , std.Batch)
+// Alumni.prototype= new Student("sss",22);
+// var std = new Alumni();
+// console.log(std.class , std.Batch)
 
 
 
 
-const Animal = function(sound){
-    this.Sound=sound;
-}
-Animal.prototype.makeSound = function() {
-    console.log(this.Sound);
-}
-var dog = function(name , breed){
-this.name=name;
-this.breed=breed;
-}
+// const Animal = function(sound){
+//     this.Sound=sound;
+// }
+// Animal.prototype.makeSound = function() {
+//     console.log(this.Sound);
+// } // added a new method to animal using prototype function
 
-dog.prototype = new Animal("bow");
-var cat = function(name, breed){
-    this.name=name;
-    this.breed=breed;
-}
+// var dog = function(name , breed){
+// this.name=name;
+// this.breed=breed;
+// }
 
-cat.prototype = new Animal("meow");
-var dog1 = new dog("pino","corgi");
-var cat1= new cat("bin","persian");
-dog1.makeSound();
-cat1.makeSound();
+// dog.prototype = new Animal("bow");
+// var cat = function(name, breed){
+//     this.name=name;
+//     this.breed=breed;
+// }
+
+// cat.prototype = new Animal("meow");
+// var dog1 = new dog("pino","corgi");
+// var cat1= new cat("bin","persian");
+// dog1.makeSound();
+// cat1.makeSound();
     </script>
 </body>
 
