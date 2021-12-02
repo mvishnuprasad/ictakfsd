@@ -1,0 +1,17 @@
+{
+"people" :[
+{
+    "name" : "meera",
+    "gender" : "female"
+},
+{
+    "name":"gokul",
+    "gender":"male"
+},
+{
+    "name":"rahul",
+    "gender":"male"
+}
+]
+
+}

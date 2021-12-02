@@ -13,6 +13,6 @@ function ajax(){
         }
     }
     //initiate
-    xhttp.open("GET", "ajax.txt",true);
+    xhttp.open("GET", "people.json",true);
     xhttp.send();
     }
