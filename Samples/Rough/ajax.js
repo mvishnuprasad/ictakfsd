@@ -13,7 +13,7 @@ function ajax(){
    var jpeople = res.people;
    var op = "";
    for (var i = 0; i < jpeople.length; i++){
-    op += jpeople[i].name + " ";
+    op += jpeople[i].name+ "<br>";
    }
    document.getElementById("demo").innerHTML= op;
         
