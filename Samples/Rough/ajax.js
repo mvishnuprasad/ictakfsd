@@ -3,17 +3,18 @@ function ajax(){
 
     // creating an XHR object with step 1
     var xhttp = new XMLHttpRequest();
-    // Event Listner
+    // Event Listner step 4
     
     xhttp.onreadystatechange = function(){
-        //check conditions of
+        //check conditions. step 5 
         if(this.readyState ==4&&this.status == 200){
+            // step 6
             // document.getElementById("demo").innerHTML= this.responseText;
            var res = JSON.parse(this.responseText); 
    var jpeople = res.people;
    var op = "";
    for (var i = 0; i < jpeople.length; i++){
-    op += jpeople[i].name+ "<br>";
+    op += "<li>" + jpeople[i].name+ "</li>";
    }
    document.getElementById("demo").innerHTML= op;
         
