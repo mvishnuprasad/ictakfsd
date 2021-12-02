@@ -23,3 +23,28 @@ function ajax(){
     xhttp.open("GET", "people.json",true);
     xhttp.send();
     }
+    function api(){
+
+
+        // creating an XHR object with
+        var xhttp = new XMLHttpRequest();
+        // Event Listner
+        
+        xhttp.onreadystatechange = function(){
+            //check conditions of
+            if(this.readyState ==4&&this.status == 200){
+                // document.getElementById("demo").innerHTML= this.responseText;
+               var res = JSON.parse(this.responseText); 
+      
+       var op = "";
+       for (var i = 0; i < res.length; i++){
+        op += res[i].title+ "<br>";
+       }
+       document.getElementById("demo").innerHTML= op;
+            
+            }
+        }
+        //initiate
+        xhttp.open("GET", "https://jsonplaceholder.typicode.com/posts",true);
+        xhttp.send();
+        }
