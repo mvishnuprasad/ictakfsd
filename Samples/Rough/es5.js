@@ -19,4 +19,6 @@ document.write("<br>"+str.indexOf("message"));
 document.write("<br>"+str[2]);
 document.write("<br>"+str.replace(" is", "  IS"));
 document.write("<br>"+str.trim());
-document.write("<br>"+str.split(""));
+document.write("<br>"+str.split(" ,"));
+document.write("<br>"+str.slice(4,9));
+document.write("<br>"+str.substring(1,2))
