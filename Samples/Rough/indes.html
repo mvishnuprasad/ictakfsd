@@ -7,28 +7,15 @@
     <!-- <h1>Student</h1> -->
 <div id = "demo">
     <h1> FIle reading using AJAX</h1>
+    <button onclick="ajax();" >GO</button>
 </div>
+<script src="ajax.js"></script>
 <!-- 
 <input type="text" id = "enter">
 <p id ="num"></p>
     <button id ="press" onclick="onPress();">Click</button> -->
     <script>
 
-
-// creating an XHR object with
-var xhttp = new XMLHttpRequest();
-// Event Listner
-
-xhttp.onreadystatechange = function(){
-    //check conditions of
-    if(this.readyState ==4&&this.status == 200){
-        document.getElementById("demo").innerHTML= this.responseText;
-
-    }
-}
-//initiate
-xhttp.open("GET", "ajax.txt",true);
-xhttp.send();
 // let press = document.getElementById("press");
 // let num = document.getElementById("num");
 // let enter = document.getElementById("enter");
