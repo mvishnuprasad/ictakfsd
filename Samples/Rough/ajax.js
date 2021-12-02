@@ -1,7 +1,7 @@
 function ajax(){
 
 
-    // creating an XHR object with
+    // creating an XHR object with step 1
     var xhttp = new XMLHttpRequest();
     // Event Listner
     
@@ -19,8 +19,9 @@ function ajax(){
         
         }
     }
-    //initiate
+    //initiate step 2 
     xhttp.open("GET", "people.json",true);
+    //step 3
     xhttp.send();
     }
     function api(){
