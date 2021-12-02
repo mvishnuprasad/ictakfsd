@@ -8,8 +8,15 @@ function ajax(){
     xhttp.onreadystatechange = function(){
         //check conditions of
         if(this.readyState ==4&&this.status == 200){
-            document.getElementById("demo").innerHTML= this.responseText;
-    
+            // document.getElementById("demo").innerHTML= this.responseText;
+           var res = JSON.parse(this.responseText); 
+   var jpeople = res.people;
+   var op = "";
+   for (var i = 0; i < jpeople.length; i++){
+    op += jpeople[i].name + " ";
+   }
+   document.getElementById("demo").innerHTML= op;
+        
         }
     }
     //initiate
