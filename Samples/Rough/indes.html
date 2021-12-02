@@ -4,17 +4,55 @@
 <head>
 </head>
 <body>
-    <h1>Student</h1>
-
-
+    <!-- <h1>Student</h1> -->
+<div id = "demo">
+    <h1> FIle reading using AJAX</h1>
+</div>
+<!-- 
 <input type="text" id = "enter">
 <p id ="num"></p>
-    <button id ="press" onclick="onPress();">Click</button>
+    <button id ="press" onclick="onPress();">Click</button> -->
     <script>
-let press = document.getElementById("press");
-let num = document.getElementById("num");
-let enter = document.getElementById("enter");
 
+
+// creating an XHR object with
+var xhttp = new XMLHttpRequest();
+// Event Listner
+
+xhttp.onreadystatechange = function(){
+    //check conditions of
+    if(this.readyState ==4&&this.status == 200){
+        document.getElementById("demo").innerHTML= this.responseText;
+
+    }
+}
+//initiate
+xhttp.open("GET", "ajax.txt",true);
+xhttp.send();
+// let press = document.getElementById("press");
+// let num = document.getElementById("num");
+// let enter = document.getElementById("enter");
+// var _333w =22;
+// const a;
+
+// //Step 1 XHR Object Creation
+// var xhttp  = new XMLHttpRequest();
+// //Step 2 innstantiationg the request Object, GET used to send small amt and POSt for large amt
+// xhttp.open("GET", "ajax_info.txt",true);
+// //Step 3 Sending the request to server4
+// xhttp.send();
+// // Step 6 inserting the respnse from server to HTML elemnt
+// document.getElementById("demo").innerHTML = this.ResponseText
+// //Step 5 check if the req is complete and successful
+
+// if (this.readyState==4&&this.status==200)
+
+// //step 4 Defining event listner for readystaechange event
+// //onreadystatechange ddefines a function to be executed when ready state changes
+// //ready state holds the status of XHTTPRequest (values from0 0-4)
+// xhttp.onreadystatechange = function(){
+
+// }
 
 // function onPress(){
 //     var a = 0;
@@ -25,19 +63,24 @@ let enter = document.getElementById("enter");
 //         console.log(e.description);
 //     }
 // }
-
-function onPress(){
-    var a = enter.value;
-    try{
-        if (a=="") throw "empty";
-        if(isNaN(a)) throw "not a num";
-        if(a<5) throw "low";
-        if(a>10) throw "high";
-    }
-    catch(e){
-        num.innerHTML = "Error " + e;
-    }
-}
+// num.innerHTML = "";
+// function onPress(){
+//     var a = enter.value;
+    
+//     try{
+//         if (a=="") throw "empty";
+//         if(isNaN(a)) throw "not a num";
+//         if(a<5) throw "low";
+//         if(a>10) throw "high";
+//     }
+//     catch(e){
+//         num.innerHTML = "Error " + e;
+//     }
+//     finally{
+//         enter.value = "";
+        
+//     }
+// }
 
 // var student = {
 //     fname:"John",
