@@ -72,3 +72,11 @@ function disp(){
 
 add(1222,552 , disp);
 // disp();
+
+function add(a,b){
+    return a+b;
+}
+function sub(sum,c ){
+return sum(5,5)-c;
+}
+document.write(sub(add, 1));
