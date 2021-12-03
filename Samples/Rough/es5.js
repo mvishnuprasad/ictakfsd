@@ -35,7 +35,8 @@ document.write("<br>"+str.substring(1,2));
 //     return value1.startsWith("c");
 // }
 // document.write("<br> "+fruits.filter(func1));
-
+// Callback functions
+// setInterval(argFuncction , 1000);
 function argFunction(val){
     document.write(val);
 }
@@ -43,6 +44,20 @@ function argFunction(val){
 function callbackFunction (var1 , Callback){
     var1+="a";
     Callback(var1);
+    
 }
 
- callbackFunction("Zebr" , argFunction);
+ callbackFunction( "<br>"+"Zebr" , argFunction);
+ 
+//Arrow function : Does not include keyword called func
+
+ let arrowFunc = (num1, num)=>{
+     return num1+num;
+
+ }
+ //or
+
+ let arrowFunc1 = (num1, num)=>(num1+num);
+
+ document.write( "<br>"+arrowFunc(2,3));
+ document.write( "<br>"+arrowFunc1(4,5));
