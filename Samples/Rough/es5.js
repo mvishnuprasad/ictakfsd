@@ -77,6 +77,7 @@ function add(a,b){
     return a+b;
 }
 function sub(sum,c ){
-return sum(5,5)-c;
+    document.write("<br>");
+document.write( sum(53,5)-c);
 }
-document.write(sub(add, 1));
+sub(add, 1);
